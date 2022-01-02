@@ -6,7 +6,7 @@
 ##### Bootstrap is used for page layout and page responsiveness.
 ##### It includes component life-cycles and React Router hooks.
 
-#### I use this API [DEMO](https://www.googleapis.com/books/v1/volumes?maxResults=10&orderBy=relevance&q=deneme/).
+#### I use this [API](https://www.googleapis.com/books/v1/volumes?maxResults=10&orderBy=relevance&q=deneme/).
 
 ## Technologies that I used
 - React
