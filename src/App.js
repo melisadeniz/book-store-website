@@ -3,18 +3,10 @@ import Nav from './components/base/Nav';
 import Footer from './components/base/Footer';
 import { Routes, Route } from 'react-router-dom';
 import routes from './routes';
-// import { useEffect, useState } from "react";
+
 
 function App() {
 
-//   const [posts, setPosts] = useState([]);
-
-//   useEffect(() => {
-//     console.log("Veri aliniyor");
-//    fetch("https://jsonplaceholder.typicode.com/posts").then((res) => {
-//      res.json().then((data) => setPosts(data));
-//    })
-//   }, []);
 
   return  <>
        <Nav />

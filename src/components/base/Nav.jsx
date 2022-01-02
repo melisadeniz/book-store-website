@@ -7,7 +7,7 @@ function Nav(props) {
     <>
       <nav className="navbar navbar-expand-lg navbar-light bg-warning">
         <Link className="navbar-brand" to="#">
-         <h3>Navbar</h3>
+         <img src="https://upload.wikimedia.org/wikipedia/tr/5/52/D%26R_logo.jpg" className="mx-3" width="100" height="80" alt="..." />
         </Link>
 
         <div className="navbar">

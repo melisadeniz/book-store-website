@@ -1,9 +1,12 @@
 import React from 'react';
 import SearchProduct from './SearchProduct';
 
+
+
 function Home(props) {
+
+
  
-  
     return (
       <>
        <nav className="container navbar navbar-expand-lg navbar-light bg-light">
@@ -11,9 +14,7 @@ function Home(props) {
         <div className='row'>
           <h1>Home</h1>
         </div>
-        <div className='row'>
         <SearchProduct />
-        </div>
         </div>
         </nav>
       </>

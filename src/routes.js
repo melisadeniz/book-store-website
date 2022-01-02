@@ -12,8 +12,8 @@ const routes = [
   {title:"About", path:"about", element: About, isNav: true, isFooter: true},
   {title:"Products", path:"products", element: Products, isNav: true, isFooter: false},
   {title:"ProductDetail", path:"products/:productId", element: ProductDetail, isNav: false, isFooter: false},
-  {title:"Search Product", path:"search-product", element: SearchProduct, isNav: true, isFooter: false},
-  {title:"Search Product", path:"search-product/:productName", element: SearchProduct, isNav: false, isFooter: false},
+  {title:"Search Product", path:"/arama", element: SearchProduct, isNav: true, isFooter: false},
+  {title:"Search Product", path:"search-product/:productId", element: SearchProduct, isNav: false, isFooter: false},
   {title:"Contact", path:"contact", element: Contact, isNav: false, isFooter: true},
   {title:"NotFound", path:"*", element: NotFound, isNav: false, isFooter: false}
 ]
