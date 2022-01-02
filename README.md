@@ -1,4 +1,4 @@
-# SearchApp
+# React API Project
 
 ## Technologies that I used
 - React.js
