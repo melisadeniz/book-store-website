@@ -1,12 +1,8 @@
 import React from 'react';
 import SearchProduct from './SearchProduct';
 
-
-
 function Home(props) {
 
-
- 
     return (
       <>
        <nav className="container navbar navbar-expand-lg navbar-light bg-light">

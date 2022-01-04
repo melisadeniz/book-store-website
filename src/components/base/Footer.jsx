@@ -2,9 +2,14 @@ import React from 'react';
 import routes from '../../routes';
 import { Link } from 'react-router-dom';
 
+
 function Footer(props) {
   return <>
-<div className="py-3 my-4">
+
+<footer className="text-center">
+
+
+<div className="col py-3 my-4">
   <ul className="nav justify-content-center border-bottom pb-3 mb-3">
              {routes
               .filter((item) => item.isFooter)
@@ -18,6 +23,16 @@ function Footer(props) {
   </ul>
   
   </div>
+
+
+<div className="text-center p-3" >
+  © 2022 Copyright {' '}
+  <Link className="text-dark" to="#">Melisa Deniz</Link>
+</div>
+
+</footer>
+
+
 </>
   ;}
 

@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 function SearchProduct(props) {
     const location = useLocation(); 
@@ -59,27 +60,40 @@ function SearchProduct(props) {
             </button>
           </form>
     
-          {location.pathname === '/arama' && <h1> Results: 
-           
-          {data
-        .filter((item) => item.volumeInfo.title.includes(urlQ))
-        .map((item) => (
-          
-       <div className="card m-3">
-        <div className="row g-0">    
-            <div className="col-md-8">
-            <div className="card-body"></div>   
-             <h5 className="card-title">{item.volumeInfo.title}</h5>
-             <h6 className="card-text">{item.volumeInfo.authors}</h6>
-          </div>
-        </div>
-       </div>
-          
-        ))} </h1>
-      }
+          {location.pathname === '/arama' && <div>
 
-       </>
-      );
-     }
-        
-    export default SearchProduct;
+         <table className="table table-hover">
+
+           { location.search !== '' &&
+        <thead className='bg-warning'>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Title</th>
+          <th scope="col">Authors</th>
+        </tr>
+        </thead> 
+             }
+            
+           {data
+        .filter((item, index) => item.volumeInfo.title.includes(urlQ))
+        .map((item, index) => (
+          
+          <tbody className='table'>
+          <tr>
+            <th scope="row">{index + 1}</th> 
+            <th>
+            <Link className="text-dark" to={`${item.id}`}>
+              {item.volumeInfo.title}
+            </Link>
+            </th>
+            <td>{item.volumeInfo.authors}</td>
+          </tr>
+          </tbody> 
+        ))}
+        </table>
+      </div>
+       }
+   </>
+  )}     
+
+export default SearchProduct
