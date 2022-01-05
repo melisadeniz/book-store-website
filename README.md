@@ -5,7 +5,7 @@
 #### Bootstrap is used for page layout and page responsiveness.
 #### It includes component life-cycles and React Router hooks.
 
-### You can reach my project [DEMO](https://dr-bookstore-website-clone.netlify.app/contact).📚
+### You can reach my project [DEMO](https://dr-bookstore-website-clone.netlify.app).📚
 
 ### I used this [API](https://www.googleapis.com/books/v1/volumes?maxResults=10&orderBy=relevance&q=deneme/).
 
