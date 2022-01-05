@@ -11,11 +11,11 @@ function Nav(props) {
         </Link>
 
         <div className="navbar">
-          <ul className="nav justify-content-end ">
+          <ul className="nav">
             {routes
               .filter((item) => item.isNav)
               .map((item, index) => (
-                <li key={index}>
+                <li className="nav-item" key={index}>
                   <Link className="nav-item nav-link text-dark text-end" to={item.path}>
                     {item.title}
                   </Link>

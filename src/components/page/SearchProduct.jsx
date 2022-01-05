@@ -52,10 +52,10 @@ function SearchProduct(props) {
 
             </div>
     
-            <button type="reset" className="btn btn-danger mx-5 m-3">
+            <button type="reset" className="btn btn-danger m-2">
               Reset
             </button>
-            <button type="submit" className="btn btn-primary m-3">
+            <button type="submit" className="btn btn-primary m-2">
               Submit
             </button>
           </form>

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import bookimages from './bookimages';
+import { GiShoppingCart } from "react-icons/gi"
 import { Link } from 'react-router-dom';
 
 
@@ -34,7 +34,7 @@ function ProductDetail(props) {
           <th scope="col">Authors</th>
           <th scope="col">Published Date</th>
           <th scope="col">Categories</th>
-          <th scope="col" className='d-none d-md-block'>-</th>
+          <th scope="col" className=''></th>
         </tr>
       </thead>
 
@@ -45,13 +45,13 @@ function ProductDetail(props) {
 
         <tr>
           <td>
-            <img src={bookimages[index].URL} alt="products" style={{ width: "20vh", height: "30vh" }}/></td> 
+            <img src={item?.volumeInfo?.imageLinks?.thumbnail} alt="products" style={{ width: "20vh", height: "30vh" }}/></td> 
           <td>{item.volumeInfo.title}</td>
           <td>{item.volumeInfo.authors}</td>
           <td>{item.volumeInfo.publishedDate}</td>
           <td>{item.volumeInfo.categories}</td>
           <td className="d-none d-md-table-cell">         
-            <Link to="#" className="btn btn-primary">Add to Chart</Link></td>
+            <Link to="#" className="btn btn-primary">Add to Chart <GiShoppingCart /></Link></td>
        </tr>
         
            ))}
