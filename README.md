@@ -10,5 +10,6 @@
 ## Technologies that I used
 - React
 - React Router Dom
+- JavaScript
 - Bootstrap
 
