@@ -29,7 +29,7 @@ function SearchProduct(props) {
     function formHandler(event) {
       event.preventDefault();
       setUrlQ(event.target.q.value);
-      navigate(`/arama?q=${event.target.q.value}`);
+      navigate(`/products?q=${event.target.q.value}`);
     }
 
 

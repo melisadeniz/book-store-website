@@ -8,10 +8,7 @@ function Products() {
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(true);
 
-
-
   useEffect(() => {
-
 
     setTimeout(() => {
       const URL = 'https://www.googleapis.com/books/v1/volumes?maxResults=10&orderBy=relevance&q=deneme';
