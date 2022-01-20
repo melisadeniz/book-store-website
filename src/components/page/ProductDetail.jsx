@@ -51,7 +51,7 @@ function ProductDetail(props) {
           <td>{item.volumeInfo.publishedDate}</td>
           <td>{item.volumeInfo.categories}</td>
           <td className="d-none d-md-table-cell">         
-            <Link to="#" className="btn btn-primary">Add to Chart <GiShoppingCart /></Link></td>
+            <Link to="#" className="btn btn-primary">Add to Cart <GiShoppingCart /></Link></td>
        </tr>
         
            ))}
