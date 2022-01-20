@@ -29,19 +29,21 @@ function Footer(props) {
 
         <section className="mb-4">
 
-          <Link
+          <a
             className="btn btn-primary btn-floating m-1"
             style={{ backgroundColor: "#0082ca" }}
-            to="https://www.linkedin.com/in/melisa-deniz"
+            href="https://www.linkedin.com/in/melisa-deniz"
+            target='_blank'
             role="button"
-          ><BsLinkedin /></Link>
+          ><BsLinkedin /></a>
 
-          <Link
+          <a
             className="btn btn-primary btn-floating m-1"
             style={{ backgroundColor: "#333333" }}
-            to="https://github.com/melisadeniz"
+            href="https://github.com/melisadeniz"
+            target='_blank'
             role="button"
-          ><BsGithub /></Link>
+          ><BsGithub /></a>
         </section>
 
       </div>
